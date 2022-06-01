@@ -18,7 +18,7 @@ string press( string q1, string q2, string q3)
     return rep;
 }
 void bigspace(){
-    cout<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl;
+    cout<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl<<endl;
 }
 
 void diescreen(){
@@ -62,6 +62,10 @@ void hmap(){
 
 
 
+void chap2(){
+    cout<<"How dare you enter into my room"<<endl;
+    diescreen();
+}
 
 void chap1(){
     cout<<"Your Master:"<<endl;
@@ -89,13 +93,13 @@ void chap1(){
     cout<<"Your Master:"<<endl<<"Everyone outside besides Ropiaou"<<endl<<endl<<endl<<endl;
     kk("Exit");
     hmap();
+    pathmap(0);
 
 
 
 }
 
 int main(){
-    trie();
     cout<<"Welcome to"<<endl<<endl;
     cout<<"         _____       _              _ "<<endl;
     cout<<"        |   __| ___ | |_  ___  ___ | |"<<endl;
@@ -121,15 +125,21 @@ int main(){
         diescreen();
         cout<<"never say such thing \n";
     }
-    if (rep=="2")
-        cout<<"mister";
-    if (rep=="3")
+    if (rep=="2"){
+        cout<<"mister Antochan!"<<endl<<"Do you know where do you have to go"<<endl;
+        kk("nop");
+        bigspace();
+        cout<<"at the director's room"<<endl;
+        kk("...");
+        diescreen();
+}     
+    if (rep=="3"){
         cout<<"'next time you will be fired'"<<endl<<endl;
         chap1();
-
-
-
-
+        bigspace();
+        chap2();
+    }
 
     return 0;
 }
+
