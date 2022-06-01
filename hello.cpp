@@ -53,15 +53,6 @@ void GEoeval(){
 
 }
 
-void hmap(){
-    cout<<"You-->Θ    people-->☺"<<endl;
-    kk("ok");
-    cout<<"tap h when you're on the map to have this kind of help "<<endl;
-    kk("understood");
-}
-
-
-
 void chap2(){
     cout<<"How dare you enter into my room"<<endl;
     diescreen();
@@ -92,7 +83,6 @@ void chap1(){
     kk();
     cout<<"Your Master:"<<endl<<"Everyone outside besides Ropiaou"<<endl<<endl<<endl<<endl;
     kk("Exit");
-    hmap();
     pathmap(0);
 
 
